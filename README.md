@@ -1,4 +1,4 @@
-# High-Precision Trigonometry via Integer Overflow
+# High-Precision Time Management via Integer Overflow
 
 ## Overview
 
@@ -99,7 +99,7 @@ uint tick = _GTick + SecondsToTick(_SimTimeOffset);
 // Convert to seconds when needed
 float time = TickToSeconds(tick);
 
-// Use in trigonometric functions, etc.
+// Use in time-based calculations, animations, trigonometric functions, etc.
 float sine = sin(time * TWO_PI);
 ```
 
