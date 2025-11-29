@@ -4,6 +4,8 @@
 
 This project implements a high-precision time management system using the integer overflow method. It solves the precision degradation problem that occurs with float-based time management after long periods by leveraging the overflow characteristics of uint (32-bit unsigned integer).
 
+[![Thumbnail](http://img.youtube.com/vi/qxbvjCT8EVQ/mqdefault.jpg)](https://youtu.be/qxbvjCT8EVQ)
+
 ## Problem: Precision Degradation in Float-Based Time Management
 
 Traditional time management using float types suffers from the following issues:
