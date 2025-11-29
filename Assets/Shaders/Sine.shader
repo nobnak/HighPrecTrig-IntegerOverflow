@@ -35,9 +35,10 @@ Shader "Hidden/Sine" {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
                 float2 pixelCoord = input.texcoord * _ScreenParams.xy;
                 uint i = pixelCoord.x + floor(pixelCoord.y/20) * _ScreenParams.x;
+                if (_TickPeriod == TICK_PERIOD_HOUR) i *= 24;
 
                 uint tick = (uint)(_GTick * _TimeScale) 
-                    + i * _PixelFreq 
+                    + (uint)(i * _PixelFreq) 
                     + SecondsToTick(_SimTimeOffset);
                 float time = _Time.y * _TimeScale 
                     + TickToSeconds(i * _PixelFreq) 
