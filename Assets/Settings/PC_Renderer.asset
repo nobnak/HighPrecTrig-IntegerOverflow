@@ -68,7 +68,7 @@ MonoBehaviour:
   injectionPoint: 600
   fetchColorBuffer: 1
   requirements: 0
-  passMaterial: {fileID: 2100000, guid: 3966b87fe8ee9fb408c0b3d686b5b691, type: 2}
+  passMaterial: {fileID: 2100000, guid: dd89ed5957e151844b810f532da9e325, type: 2}
   passIndex: 0
   bindDepthStencilAttachment: 0
   m_Version: 1

@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f39dc119fb9af4982fd33c61a39d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 0
+  period: 1
 --- !u!4 &184468710
 Transform:
   m_ObjectHideFlags: 0
@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b20a6764f497ad54993e2d55a3cd2a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sineMaterial: {fileID: 2100000, guid: 3966b87fe8ee9fb408c0b3d686b5b691, type: 2}
+  sineMaterial: {fileID: 2100000, guid: dd89ed5957e151844b810f532da9e325, type: 2}
   uiDocument: {fileID: 435556506}
   pixelFreqMin: 0
   pixelFreqMax: 100

@@ -30,9 +30,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _Period: 10
-    - _PixelFreq: 25.5
-    - _SimTimeOffset: 3676471
-    - _TimeScale: 0.51
+    - _PixelFreq: 100
+    - _SimTimeOffset: 867793
+    - _TimeScale: 0.18
     m_Colors:
     - _Color: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

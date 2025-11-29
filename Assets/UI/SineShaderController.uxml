@@ -1,25 +1,26 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="container" style="padding: 10px; background-color: rgba(140, 140, 140, 0.8); height: 308px; width: 354px; top: 20px; left: 20px;">
-        <ui:Label text="Sine Shader Controller" style="font-size: 18px; margin-bottom: 10px; -unity-font-style: bold;" />
-        <ui:VisualElement name="pixel-freq-group" style="margin-bottom: 15px;">
-            <ui:Label text="Pixel Frequency" style="margin-bottom: 5px;" />
-            <ui:VisualElement style="flex-direction: row; align-items: center;">
-                <ui:Slider name="pixel-freq-slider" low-value="0" high-value="100" style="flex-grow: 1; margin-right: 10px;" />
-                <ui:TextField name="pixel-freq-input" style="width: 100px; height: 30px; padding-left: 6px; padding-right: 6px; padding-top: 0px; padding-bottom: 0px; font-size: 10px; -unity-text-align: middle-center;" />
+    <Style src="project://database/Assets/UI/SineShaderController.uss?fileID=7433441132597879392&amp;guid=c4a6ff342f4968a45961fbb969c7e9e4&amp;type=3#SineShaderController" />
+    <ui:VisualElement name="container" class="container">
+        <ui:Label text="Sine Shader Controller" class="title-label" />
+        <ui:VisualElement name="pixel-freq-group" class="group">
+            <ui:Label text="Pixel Frequency" class="group-label" />
+            <ui:VisualElement class="slider-row">
+                <ui:Slider name="pixel-freq-slider" low-value="0" high-value="100" class="slider" />
+                <ui:TextField name="pixel-freq-input" value="10.000" class="text-field" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="time-scale-group" style="margin-bottom: 15px;">
-            <ui:Label text="Time Scale" style="margin-bottom: 5px;" />
-            <ui:VisualElement style="flex-direction: row; align-items: center;">
-                <ui:Slider name="time-scale-slider" low-value="0" high-value="10" style="flex-grow: 1; margin-right: 10px;" />
-                <ui:TextField name="time-scale-input" style="width: 100px; height: 30px; padding-left: 6px; padding-right: 6px; padding-top: 0px; padding-bottom: 0px; font-size: 10px; -unity-text-align: middle-center;" />
+        <ui:VisualElement name="time-scale-group" class="group">
+            <ui:Label text="Time Scale" class="group-label" />
+            <ui:VisualElement class="slider-row">
+                <ui:Slider name="time-scale-slider" low-value="0" high-value="10" class="slider" />
+                <ui:TextField name="time-scale-input" value="1.000" class="text-field" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="sim-time-offset-group" style="margin-bottom: 15px;">
-            <ui:Label text="Sim Time Offset" style="margin-bottom: 5px;" />
-            <ui:VisualElement style="flex-direction: row; align-items: center;">
-                <ui:Slider name="sim-time-offset-slider" low-value="-100000" high-value="100000" style="flex-grow: 1; margin-right: 10px;" />
-                <ui:TextField name="sim-time-offset-input" style="width: 100px; height: 30px; padding-left: 6px; padding-right: 6px; padding-top: 0px; padding-bottom: 0px; font-size: 10px; -unity-text-align: middle-center;" />
+        <ui:VisualElement name="sim-time-offset-group" class="group">
+            <ui:Label text="Sim Time Offset" class="group-label" />
+            <ui:VisualElement class="slider-row">
+                <ui:Slider name="sim-time-offset-slider" low-value="-100000" high-value="100000" class="slider" />
+                <ui:TextField name="sim-time-offset-input" value="0.000" class="text-field" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
