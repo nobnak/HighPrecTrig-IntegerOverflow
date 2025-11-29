@@ -34,19 +34,20 @@ Shader "Hidden/Sine" {
             float4 frag (Varyings input) : SV_Target {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
                 float2 pixelCoord = input.texcoord * _ScreenParams.xy;
+                uint i = pixelCoord.x + floor(pixelCoord.y/20) * _ScreenParams.x;
 
-                uint2 tick = _GTick * _TimeScale
-                    + SecondsToTick(pixelCoord * _PixelFreq)
+                uint tick = (uint)(_GTick * _TimeScale) 
+                    + i * _PixelFreq 
                     + SecondsToTick(_SimTimeOffset);
-                float2 time = _Time.y * _TimeScale 
-                    + pixelCoord * _PixelFreq 
+                float time = _Time.y * _TimeScale 
+                    + TickToSeconds(i * _PixelFreq) 
                     + _SimTimeOffset;
 
-                if (input.texcoord.x < 0.5) {                    
+                if (input.texcoord.x < 0.5) {
                     time = TickToSeconds(tick);
                 }
-                float2 sine = sin(time * TWO_PI);
-                float4 col = float4(sine, 0.0, 1.0);
+                float sine = sin(time * TWO_PI);
+                float4 col = float4(sine, -sine, abs(sine), 1.0);
                 
                 return col;
             }
